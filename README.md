@@ -1,4 +1,4 @@
-# Fruit Chatbot and Translator Web Application
+# FruitAi application
 
 ## 🛠 Login Credentials (for demo)
 **Email:** `admin@gmail.com`  
