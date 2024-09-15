@@ -13,8 +13,8 @@ import { AiFillEye } from "react-icons/ai";
 
 
 const LoginPage = () => {
-  const [userId, setUserId] = useState("admin@gmail.com");
-  const [password, setPassword] = useState("secret123");
+  const [userId, setUserId] = useState("");
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   
   const navigate = useNavigate();
