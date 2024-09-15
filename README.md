@@ -50,7 +50,6 @@ This project is a **full-stack web application** developed using **React** for t
 
 5. **FAQ Page**:
    - Full CRUD functionality (Create, Read, Update, Delete) for managing FAQs related to fruits.
-   - Proper form validation, error handling, and user feedback.
 
 6. **About Page**:
    - Static content page that provides information about the application and its purpose.
