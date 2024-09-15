@@ -192,6 +192,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # React frontend
+    "https://fruitai19.netlify.app"
 ]
 
 ROOT_URLCONF = 'fruitai.urls'

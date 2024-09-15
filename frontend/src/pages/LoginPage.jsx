@@ -13,8 +13,8 @@ import { AiFillEye } from "react-icons/ai";
 
 
 const LoginPage = () => {
-  const [userId, setUserId] = useState("");
-  const [password, setPassword] = useState("");
+  const [userId, setUserId] = useState("admin@gmail.com");
+  const [password, setPassword] = useState("secret123");
   const [showPassword, setShowPassword] = useState(false);
   
   const navigate = useNavigate();
@@ -32,7 +32,6 @@ const LoginPage = () => {
   return (
     <Wrapper>
       <div className="login-container">
-      <h3>Email: admin@gmail.com <br/> Password: secret123</h3>
         <h1>Login</h1>
         <p>
           By signing in you are agreeing to our <a href="#">Terms</a> and{" "}
