@@ -12,19 +12,22 @@ const FAQPage = () => {
   }, []);
 
   const fetchFAQs = async () => {
-    const res = await axios.get("http://127.0.0.1:8000/api/faqs/");
+    const res = await axios.get("https://fruitai-2nlh.onrender.com/api/faqs/");
     setFaqs(res.data);
   };
 
   const handleCreateFAQ = async () => {
-    const res = await axios.post("http://127.0.0.1:8000/api/faqs/", newFAQ);
+    const res = await axios.post(
+      "https://fruitai-2nlh.onrender.com/api/faqs/",
+      newFAQ
+    );
     setFaqs([...faqs, res.data]);
     setNewFAQ({ question: "", answer: "" });
   };
 
   const handleUpdateFAQ = async (id) => {
     const res = await axios.put(
-      `http://127.0.0.1:8000/api/faqs/${id}/`,
+      `https://fruitai-2nlh.onrender.com/api/faqs/${id}/`,
       editFAQ
     );
     const updatedFaqs = faqs.map((faq) => (faq.id === id ? res.data : faq));
@@ -33,7 +36,7 @@ const FAQPage = () => {
   };
 
   const handleDeleteFAQ = async (id) => {
-    await axios.delete(`http://127.0.0.1:8000/api/faqs/${id}/`);
+    await axios.delete(`https://fruitai-2nlh.onrender.com/api/faqs/${id}/`);
     setFaqs(faqs.filter((faq) => faq.id !== id));
   };
 
