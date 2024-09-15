@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import axios from "../utils/axios";
 import Wrapper from "../assets/wrappers/faq";
 
 const FAQPage = () => {
@@ -40,56 +39,63 @@ const FAQPage = () => {
 
   return (
     <Wrapper>
-    <div className="faq-container">
-      <h1>FAQ Page</h1>
+      <div className="faq-container">
+        <h1>Fruit FAQs</h1>
 
-      <div>
-        <input
-          type="text"
-          placeholder="Question"
-          value={newFAQ.question}
-          onChange={(e) => setNewFAQ({ ...newFAQ, question: e.target.value })}
-        />
-        <input
-          type="text"
-          placeholder="Answer"
-          value={newFAQ.answer}
-          onChange={(e) => setNewFAQ({ ...newFAQ, answer: e.target.value })}
-        />
-        <button onClick={handleCreateFAQ}>Add FAQ</button>
-      </div>
-
-      {faqs.map((faq) => (
-        <div key={faq.id}>
-          {editFAQ && editFAQ.id === faq.id ? (
-            <>
-              <input
-                type="text"
-                value={editFAQ.question}
-                onChange={(e) =>
-                  setEditFAQ({ ...editFAQ, question: e.target.value })
-                }
-              />
-              <input
-                type="text"
-                value={editFAQ.answer}
-                onChange={(e) =>
-                  setEditFAQ({ ...editFAQ, answer: e.target.value })
-                }
-              />
-              <button onClick={() => handleUpdateFAQ(faq.id)}>Save</button>
-            </>
-          ) : (
-            <>
-              <h2>Question: {faq.question}</h2>
-              <p>Answer: {faq.answer}</p>
-              <button onClick={() => setEditFAQ(faq)}>Edit</button>
-              <button onClick={() => handleDeleteFAQ(faq.id)}>Delete</button>
-            </>
-          )}
+        <div className="faq-form">
+          <input
+            type="text"
+            placeholder="Add new FAQ question"
+            value={newFAQ.question}
+            onChange={(e) => setNewFAQ({ ...newFAQ, question: e.target.value })}
+          />
+          <textarea
+            placeholder="Add answer"
+            value={newFAQ.answer}
+            onChange={(e) => setNewFAQ({ ...newFAQ, answer: e.target.value })}
+          />
+          <button onClick={handleCreateFAQ}>Add FAQ</button>
         </div>
-      ))} 
-    </div>
+
+        {faqs.map((faq) => (
+          <div key={faq.id} className="faq-item">
+            {editFAQ && editFAQ.id === faq.id ? (
+              <div className="edit-mode">
+                <input
+                  type="text"
+                  value={editFAQ.question}
+                  onChange={(e) =>
+                    setEditFAQ({ ...editFAQ, question: e.target.value })
+                  }
+                />
+                <textarea
+                  value={editFAQ.answer}
+                  onChange={(e) =>
+                    setEditFAQ({ ...editFAQ, answer: e.target.value })
+                  }
+                />
+                <button onClick={() => handleUpdateFAQ(faq.id)}>Save</button>
+              </div>
+            ) : (
+              <>
+                <h2>{faq.question}</h2>
+                <p>{faq.answer}</p>
+                <div className="faq-buttons">
+                  <button className="edit-btn" onClick={() => setEditFAQ(faq)}>
+                    Edit
+                  </button>
+                  <button
+                    className="delete-btn"
+                    onClick={() => handleDeleteFAQ(faq.id)}
+                  >
+                    Delete
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+      </div>
     </Wrapper>
   );
 };

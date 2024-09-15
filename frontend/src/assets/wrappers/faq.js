@@ -7,79 +7,67 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 20px;
-    background: linear-gradient(
-      135deg,
-      #8ec5fc,
-      #e0c3fc
-    ); /* Enhanced background gradient */
-    font-family: "Arial", sans-serif;
-    box-sizing: border-box;
+    padding: 30px;
+    background: #f7f9fb;
+    font-family: "Dosis", sans-serif;
   }
 
   h1 {
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
   }
 
-  input {
-    width: 80%;
+  .faq-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     max-width: 600px;
-    padding: 12px;
-    margin: 10px 0;
+    margin-bottom: 40px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
     font-size: 1rem;
     border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    outline: none;
-    transition: border-color 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
 
-  input:focus {
-    border-color: #4caf50;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  textarea {
+    min-height: 100px;
   }
 
   button {
-    width: 80%;
-    max-width: 600px;
-    padding: 15px;
+    padding: 12px 20px;
     font-size: 1.2rem;
-    background: #4caf50;
-    color: white;
+    background-color: #28a745;
+    color: #fff;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
 
   button:hover {
-    background: #45a049;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  button:focus {
-    outline: 3px solid #45a049;
-    outline-offset: 2px;
-  }
-
-  button:active {
-    transform: translateY(-2px);
+    background-color: #218838;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 
   .faq-item {
+    width: 100%;
+    max-width: 600px;
     background: white;
     border-radius: 10px;
     padding: 20px;
-    margin: 15px 0;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
   }
 
   .faq-item h2 {
@@ -89,23 +77,82 @@ const Wrapper = styled.div`
   }
 
   .faq-item p {
-    font-size: 1.1rem;
-    color: #555;
+    font-size: 1.2rem;
+    color: #666;
   }
 
-  /* Responsive design for mobile screens */
+  .faq-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+    margin-right: 10px;
+  }
+
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+
+  /* Edit Mode Styling */
+  .edit-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-mode input,
+  .edit-mode textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+  }
+
+  .edit-mode button {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+
+  /* Responsive Design */
   @media (max-width: 768px) {
     h1 {
       font-size: 2rem;
     }
 
-    input {
-      font-size: 0.95rem;
+    input,
+    textarea {
+      font-size: 1rem;
+      padding: 10px;
     }
 
     button {
       font-size: 1rem;
-      padding: 12px;
+      padding: 10px 15px;
     }
 
     .faq-item h2 {
@@ -122,18 +169,15 @@ const Wrapper = styled.div`
       font-size: 1.8rem;
     }
 
-    input {
+    input,
+    textarea {
       font-size: 0.9rem;
-      padding: 10px;
+      padding: 8px;
     }
 
     button {
-      font-size: 0.95rem;
-      padding: 10px;
-    }
-
-    .faq-item {
-      padding: 15px;
+      font-size: 0.9rem;
+      padding: 8px 10px;
     }
 
     .faq-item h2 {
@@ -147,4 +191,3 @@ const Wrapper = styled.div`
 `;
 
 export default Wrapper;
- 
