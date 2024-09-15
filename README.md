@@ -65,11 +65,11 @@ This project is a **full-stack web application** developed using **React** for t
 - Provides a RESTful API to manage FAQs with basic CRUD operations.
   
 ### CRUD Functionality:
-- **GET /faqs**: Fetch all FAQs.
-- **GET /faqs/:id**: Fetch a specific FAQ by ID.
-- **POST /faqs**: Create a new FAQ.
-- **PUT /faqs/:id**: Update a specific FAQ.
-- **DELETE /faqs/:id**: Delete a specific FAQ.
+- **GET api/faqs**: Fetch all FAQs.
+- **GET api/faqs/:id**: Fetch a specific FAQ by ID.
+- **POST api/faqs**: Create a new FAQ.
+- **PUT api/faqs/:id**: Update a specific FAQ.
+- **DELETE api/faqs/:id**: Delete a specific FAQ.
 
 ---
 
