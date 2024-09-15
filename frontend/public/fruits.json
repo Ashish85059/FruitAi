@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "description": "Apples are rich in fiber and vitamin C."
+  },
+  {
+    "id": 2,
+    "name": "Banana",
+    "description": "Bananas are high in potassium and vitamin B6."
+  },
+  {
+    "id": 3,
+    "name": "Orange",
+    "description": "Oranges are a great source of vitamin C and fiber."
+  },
+  {
+    "id": 4,
+    "name": "Strawberry",
+    "description": "Strawberries are packed with antioxidants and vitamin C."
+  },
+  {
+    "id": 5,
+    "name": "Grapes",
+    "description": "Grapes are high in antioxidants and vitamin K."
+  },
+  {
+    "id": 6,
+    "name": "Pineapple",
+    "description": "Pineapples are rich in vitamin C and bromelain."
+  },
+  {
+    "id": 7,
+    "name": "Mango",
+    "description": "Mangoes are a great source of vitamins A and C."
+  },
+  {
+    "id": 8,
+    "name": "Blueberry",
+    "description": "Blueberries are high in antioxidants and vitamin K."
+  },
+  {
+    "id": 9,
+    "name": "Peach",
+    "description": "Peaches are rich in vitamins A and C."
+  },
+  {
+    "id": 10,
+    "name": "Watermelon",
+    "description": "Watermelons are high in vitamins A and C and have a high water content."
+  },
+  {
+    "id": 11,
+    "name": "Kiwi",
+    "description": "Kiwis are packed with vitamin C and dietary fiber."
+  },
+  {
+    "id": 12,
+    "name": "Pomegranate",
+    "description": "Pomegranates are rich in antioxidants and vitamin C."
+  },
+  {
+    "id": 13,
+    "name": "Cherry",
+    "description": "Cherries are high in antioxidants and vitamins A and C."
+  },
+  {
+    "id": 14,
+    "name": "Apricot",
+    "description": "Apricots are rich in vitamins A and C and fiber."
+  },
+  {
+    "id": 15,
+    "name": "Pear",
+    "description": "Pears are high in dietary fiber and vitamin C."
+  },
+  {
+    "id": 16,
+    "name": "Plum",
+    "description": "Plums are rich in vitamins C and K."
+  },
+  {
+    "id": 17,
+    "name": "Raspberry",
+    "description": "Raspberries are high in dietary fiber and vitamin C."
+  },
+  {
+    "id": 18,
+    "name": "Blackberry",
+    "description": "Blackberries are rich in vitamins C and K and dietary fiber."
+  },
+  {
+    "id": 19,
+    "name": "Grapefruit",
+    "description": "Grapefruits are high in vitamins A and C."
+  },
+  {
+    "id": 20,
+    "name": "Fig",
+    "description": "Figs are rich in dietary fiber and minerals like calcium and potassium."
+  },
+  {
+    "id": 21,
+    "name": "Papaya",
+    "description": "Papayas are rich in vitamins A and C and digestive enzymes."
+  },
+  {
+    "id": 22,
+    "name": "Dragon Fruit",
+    "description": "Dragon fruit is rich in antioxidants and vitamin C."
+  },
+  {
+    "id": 23,
+    "name": "Passion Fruit",
+    "description": "Passion fruit is high in vitamins A and C and dietary fiber."
+  },
+  {
+    "id": 24,
+    "name": "Lychee",
+    "description": "Lychees are high in vitamin C and antioxidants."
+  },
+  {
+    "id": 25,
+    "name": "Avocado",
+    "description": "Avocados are rich in healthy fats, vitamins E and C, and potassium."
+  },
+  {
+    "id": 26,
+    "name": "Coconut",
+    "description": "Coconuts are high in fiber, vitamins, and healthy fats."
+  },
+  {
+    "id": 27,
+    "name": "Mango",
+    "description": "Mangoes are a great source of vitamins A and C."
+  },
+  {
+    "id": 28,
+    "name": "Tangerine",
+    "description": "Tangerines are rich in vitamin C and fiber."
+  },
+  {
+    "id": 29,
+    "name": "Nectarine",
+    "description": "Nectarines are rich in vitamins A and C and dietary fiber."
+  },
+  {
+    "id": 30,
+    "name": "Guava",
+    "description": "Guavas are rich in vitamin C, dietary fiber, and antioxidants."
+  }
+]
