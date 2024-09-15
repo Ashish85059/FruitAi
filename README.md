@@ -12,8 +12,8 @@ This project is a **full-stack web application** developed using **React** for t
 
 ### 🚀 Live Demo
 
-- **Frontend (Deployed on Netlify):** https://fruitai19.netlify.app(#)
-- **Backend (Deployed on Heroku/AWS/Render):** https://fruitai-2nlh.onrender.com/api/faqs/(#)
+- **Frontend (Deployed on Netlify):** https://fruitai19.netlify.app
+- **Backend (Deployed on Heroku/AWS/Render):** https://fruitai-2nlh.onrender.com/api/faqs/
 
 ---
 
