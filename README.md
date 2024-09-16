@@ -1,8 +1,8 @@
 # FruitAi application
 
 ## 🛠 Login Credentials (for demo)
-**Email:** `admin@gmail.com`  
-**Password:** `secret123`
+## **Email:** `admin@gmail.com`  
+## **Password:** `secret123`
 
 ---
 
