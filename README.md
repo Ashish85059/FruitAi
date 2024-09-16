@@ -9,6 +9,7 @@
 ## 📖 Project Overview
 
 This project is a **full-stack web application** developed using **React** for the frontend and **Django** for the backend. The application has several key features, including a login page, a chatbot page displaying fruit details, a language translator, an FAQ section with CRUD functionality, and an about page. The application is responsive and mobile-friendly.
+# It may take 1-2 minutes to start backend server so kindly wait few minutes after sending request on Faqs page
 
 ### 🚀 Live Demo
 
